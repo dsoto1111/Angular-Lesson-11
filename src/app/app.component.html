@@ -1,0 +1,9 @@
+<div>
+<app-child *ngIf="show" [inputBoundString]="inputBoundStringValue" [instruments]="musicalInstruments">
+    <p>This is projected content</p>
+</app-child>
+<br>
+</div>
+<hr>
+<button (click)="destroyComponent()">Destroy Component</button>
+<button (click)="changeToInstruments()">Change Input Bound Property</button>
